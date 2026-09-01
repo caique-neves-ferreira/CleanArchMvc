@@ -66,6 +66,7 @@ graph TD
     class Services,CQRS app;
     class Repo,IoC infra;
     class UI,DB,ExtAPI external;
+```
 
 ## 🚀 Como Executar o Projeto Localmente
 
