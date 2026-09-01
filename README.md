@@ -64,6 +64,8 @@ graph TD
 
     class Entities,DomainInt core;
     class Services,CQRS app;
+    class Repo,IoC infra;
+    class UI,DB,ExtAPI external;
 
 ## 🚀 Como Executar o Projeto Localmente
 
@@ -117,5 +119,4 @@ dotnet test
 
 
 
-    class Repo,IoC infra;
-    class UI,DB,ExtAPI external;
+
