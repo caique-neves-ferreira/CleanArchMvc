@@ -81,12 +81,14 @@ graph TD
 ```bash
 git clone [https://github.com/caique-neves-ferreira/CleanArchMvc.git](https://github.com/caique-neves-ferreira/CleanArchMvc.git)
 cd CleanArchMvc
+```
 
 2. Restaure os pacotes e dependências:
 Na raiz do projeto, execute:
 
 ```bash
 dotnet restore
+```
 
 3. Configuração do Banco de Dados:
 Navegue até o arquivo appsettings.json dentro do projeto CleanArchMvc.WebUI (ou a camada de API) e certifique-se de que a DefaultConnection aponta para o seu SQL Server local.
@@ -95,12 +97,14 @@ Navegue até o arquivo appsettings.json dentro do projeto CleanArchMvc.WebUI (ou
 "ConnectionStrings": {
   "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=CleanArchDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
+```
 
 4. Aplique as Migrations (Criação do Banco):
 No terminal, execute o comando apontando o projeto de inicialização (Web) e o projeto onde o banco está mapeado (Infra.Data):
 
 ```bash
 dotnet ef database update -s src/CleanArchMvc.WebUI/ -p src/CleanArchMvc.Infra.Data/
+```
 
 5. Execute a Aplicação:
 Navegue até a pasta da interface web/API e inicie o projeto:
@@ -108,7 +112,7 @@ Navegue até a pasta da interface web/API e inicie o projeto:
 ```bash
 cd src/CleanArchMvc.WebUI
 dotnet run
-
+```
 
 🧪 Como Executar os Testes
 A arquitetura foi desenhada para ser altamente testável. Para rodar a suíte de testes unitários que garantem a integridade das regras do Domínio e da Aplicação:
@@ -117,7 +121,7 @@ Na raiz do projeto, execute:
 
 ```bash
 dotnet test
-
+```
 
 
 
