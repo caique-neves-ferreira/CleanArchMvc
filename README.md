@@ -64,5 +64,23 @@ graph TD
 
     class Entities,DomainInt core;
     class Services,CQRS app;
+```mermaid
+
+## 🚀 Como Executar o Projeto Localmente
+
+**Pré-requisitos:**
+* [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) instalado.
+* Servidor SQL Server rodando (LocalDB, SQL Server Express ou via Docker).
+* EF Core CLI (`dotnet tool install --global dotnet-ef`).
+
+**Passo a Passo:**
+
+1. **Clone o repositório:**
+```bash
+git clone [https://github.com/caique-neves-ferreira/CleanArchMvc.git](https://github.com/caique-neves-ferreira/CleanArchMvc.git)
+cd CleanArchMvc
+
+
+
     class Repo,IoC infra;
     class UI,DB,ExtAPI external;
